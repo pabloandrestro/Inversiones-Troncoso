@@ -58,7 +58,7 @@ export default function ProjectShowcase() {
               Desarrollo Inmobiliario Sostenible
             </span>
             <h2 className="text-4xl font-display font-light text-slate-100 tracking-tight">
-              Condominio <span className="serif-display text-amber-500">Zubiaurre SpA</span>
+              Condominio <span className="serif-display text-amber-500">Troncoso SpA</span>
             </h2>
             <p className="text-xs text-slate-400 font-mono mt-2 tracking-wide uppercase">
               PROYECTO HABITACIONAL DS49 • 16 EDIFICIOS • 288 DEPARTAMENTOS

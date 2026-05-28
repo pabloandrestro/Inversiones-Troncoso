@@ -103,7 +103,7 @@ export default function ZuloagaHeritage() {
           <div className="flex items-center justify-center gap-3 mb-4">
             <span className="h-[1px] w-8 bg-amber-500/30" />
             <span className="text-xs font-mono text-amber-500 tracking-[0.35em] uppercase flex items-center gap-2">
-              <Palette className="w-4 h-4" /> Legado de Arte de Zubiaurre.org
+              <Palette className="w-4 h-4" /> Legado de Arte • Colección Inversiones Troncoso SpA
             </span>
             <span className="h-[1px] w-8 bg-amber-500/30" />
           </div>
@@ -246,8 +246,8 @@ export default function ZuloagaHeritage() {
 
               {/* Decorative Curatorial Bottom Note */}
               <div className="pt-6 border-t border-sep mt-4 text-[10px] font-mono text-slate-500 flex justify-between items-center">
-                <span>COMISARIADO POR TRONCOSO & ZUBIAURRE • 2026</span>
-                <span className="flex items-center gap-1"><Globe className="w-3 h-3 text-amber-500/80" /> ARCHIVO HISTÓRICO BASQUE</span>
+                <span>COMISARIADO POR INVERSIONES TRONCOSO • 2026</span>
+                <span className="flex items-center gap-1"><Globe className="w-3 h-3 text-amber-500/80" /> ARCHIVO HISTÓRICO Y PATRIMONIAL</span>
               </div>
               
             </div>
@@ -359,15 +359,15 @@ export default function ZuloagaHeritage() {
         <div className="mt-16 bg-slate-900 border border-sep p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 glass-panel">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-lg bg-slate-950 border border-sep flex items-center justify-center relative shadow-inner">
-              <span className="text-base font-mono font-bold text-amber-500">Z</span>
+              <span className="text-base font-mono font-bold text-amber-500">T</span>
             </div>
             <div>
-              <span className="text-[9px] font-mono text-amber-500 uppercase tracking-widest block">CONEXIÓN HISTÓRICA DE MARCA</span>
+              <span className="text-[9px] font-mono text-amber-500 uppercase tracking-widest block">CONEXIÓN ARTÍSTICA E HISTÓRICA</span>
               <h4 className="text-sm font-display font-light text-slate-200 mt-1">
-                ¿Por qué el nombre Zubiaurre?
+                ¿Por qué inspirarnos en el Legado Zubiaurre?
               </h4>
               <p className="text-xs text-slate-400 mt-1 max-w-xl font-sans leading-relaxed">
-                Grupo Zubiaurre adopta el apellido de Valentín y Ramón de Zubiaurre, dos pintores modernistas vascos de excepcional rigor visual. Su legado, cimentado por su contemporáneo Ignacio Zuloaga, impulsa nuestra vocación de construir con pulcritud geométrica y propósito duradero en Chile.
+                Inversiones Troncoso se inspira en la pulcritud geométrica y el rigor estético de Valentín y Ramón de Zubiaurre, destacados pintores del modernismo vasco. Al igual que sus trazos inmortales consolidados por Ignacio Zuloaga, nuestra vocación es construir viviendas y sistemas duraderos con máxima precisión técnica y valor perdurable en Chile.
               </p>
             </div>
           </div>

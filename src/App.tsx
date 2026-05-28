@@ -27,7 +27,7 @@ export default function App() {
     <div className="min-h-screen bg-slate-950 text-slate-150 selection:bg-amber-500 selection:text-slate-950 scroll-smooth flex flex-col justify-between relative">
       {/* Elegantly styled margin annotations matching Basque modernist gallery styling */}
       <div className="absolute left-6 top-1/3 -translate-y-1/2 rotate-180 [writing-mode:vertical-lr] text-[9px] font-mono uppercase tracking-[0.25em] text-slate-500 opacity-25 hidden xl:block pointer-events-none select-none">
-        Zubiaurre Modernist Holding • Est. 2004 — Chile
+        Inversiones Troncoso SpA • Est. 2004 — Chile
       </div>
       <div className="absolute right-6 top-1/2 -translate-y-1/2 [writing-mode:vertical-lr] text-[9px] font-mono uppercase tracking-[0.25em] text-slate-500 opacity-25 hidden xl:block pointer-events-none select-none">
         Inversión Sostenible • Realidad Virtual e Inteligencia Artificial
@@ -39,12 +39,12 @@ export default function App() {
           <a href="#" className="flex items-center gap-2 group cursor-pointer focus:outline-none select-none">
             {/* Embedded Mini-Brand Vector representing the double T logo */}
             <div className="w-8 h-8 rounded-lg bg-slate-900 border border-sep flex items-center justify-center relative shadow-inner shadow-amber-500/5 group-hover:border-amber-500/50 transition-all duration-300">
-              <span className="text-[14px] font-mono font-bold tracking-tighter text-amber-500">Z</span>
+              <span className="text-[14px] font-mono font-bold tracking-tighter text-amber-500">T</span>
               <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/5 to-transparent rounded-lg" />
             </div>
             <div className="flex flex-col">
-              <span className="text-[9px] uppercase tracking-[0.2em] text-slate-500 font-sans leading-none">Holding</span>
-              <span className="text-base font-display italic font-semibold tracking-[0.05em] text-slate-100 leading-none mt-1">Zubiaurre</span>
+              <span className="text-[9px] uppercase tracking-[0.2em] text-slate-500 font-sans leading-none">Inversiones</span>
+              <span className="text-base font-display italic font-semibold tracking-[0.05em] text-slate-100 leading-none mt-1">Troncoso</span>
             </div>
           </a>
 
@@ -97,8 +97,7 @@ export default function App() {
               </h1>
 
               <p className="text-sm sm:text-base text-slate-400 font-sans leading-relaxed max-w-2xl">
-                Grupo Zubiaurre vincula el capital de inversión solvente de{" "}
-                <strong>Inversiones Troncoso SpA</strong> con el desarrollo habitacional sostenible de Chile (Subsidios DS49/DS19) y un ecosistema tecnológico inmersivo de clase mundial.
+                <strong>Inversiones Troncoso SpA</strong> lidera el desarrollo habitacional sostenible de Chile (Subsidios DS49/DS19) integrándolo de forma holística con un ecosistema tecnológico inmersivo de clase mundial y soluciones financieras de alta fidelidad.
               </p>
 
               <div className="flex flex-wrap gap-4 mt-3">
@@ -327,11 +326,11 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left select-none">
           <div className="flex flex-col items-center md:items-start">
             <div className="flex items-center gap-2">
-              <span className="text-amber-500 font-mono font-bold text-sm tracking-widest">[Z]</span>
-              <span className="font-display font-semibold tracking-widest text-slate-100 text-sm">GRUPO ZUBIAURRE</span>
+              <span className="text-amber-500 font-mono font-bold text-sm tracking-widest">[T]</span>
+              <span className="font-display font-semibold tracking-widest text-slate-100 text-sm">INVERSIONES TRONCOSO</span>
             </div>
             <span className="text-[10px] text-slate-500 font-mono mt-2 block uppercase">
-              Inversión • Desarrollo • Futuro • © 2026 Grupo Zubiaurre SpA
+              Inversión • Desarrollo • Futuro • © 2026 Inversiones Troncoso SpA
             </span>
           </div>
           <div className="text-[10px] font-mono text-slate-500 uppercase flex flex-wrap justify-center gap-6">

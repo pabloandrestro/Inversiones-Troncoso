@@ -8,7 +8,7 @@ export default function AssistantChat() {
     {
       id: "initial",
       role: "model",
-      content: "¡Hola! Bienvenido a Grupo Zubiaurre. Soy el **Asesor Virtual Jhedai AI**.\n\nPuedo responder tus dudas corporativas respecto a nuestro portafolio de inversión inmobiliario en Chile, los proyectos habitacionales de integración social (como nuestro plan de 16 edificios y 288 viviendas bajo DS49/DS19), o las tecnologías inmersivas de nuestro holding (como la virtualización fotorrealista). ¿En qué área deseas enfocar tu interés hoy?",
+      content: "¡Hola! Bienvenido a Inversiones Troncoso. Soy el **Asesor Virtual Jhedai AI**.\n\nPuedo responder tus dudas corporativas respecto a nuestro portafolio de inversión inmobiliario en Chile, los proyectos habitacionales de integración social (como nuestro plan de 16 edificios y 288 viviendas bajo DS49/DS19), o las tecnologías inmersivas de nuestro holding (como la virtualización fotorrealista de Virtualizar). ¿En qué área deseas enfocar tu interés hoy?",
     },
   ]);
   const [inputMessage, setInputMessage] = useState<string>("");
@@ -88,7 +88,7 @@ export default function AssistantChat() {
       {
         id: "initial",
         role: "model",
-        content: "Sesión reiniciada. ¿Cómo puedo asesorarte hoy en tu plan de expansión con Grupo Zubiaurre?",
+        content: "Sesión reiniciada. ¿Cómo puedo asesorarte hoy en tu plan de expansión con Inversiones Troncoso?",
       },
     ]);
   };

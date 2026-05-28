@@ -12,7 +12,7 @@ export default function LeadsManager() {
   const [email, setEmail] = useState<string>("");
   const [phone, setPhone] = useState<string>("");
   const [company, setCompany] = useState<string>("");
-  const [projectInterest, setProjectInterest] = useState<string>("Condominio Zubiaurre (DS49)");
+  const [projectInterest, setProjectInterest] = useState<string>("Condominio Troncoso (DS49)");
   const [investmentBracket, setInvestmentBracket] = useState<string>("$250M CLP - $500M CLP");
   const [message, setMessage] = useState<string>("");
 
@@ -97,7 +97,7 @@ export default function LeadsManager() {
               <div className="mb-6 p-4 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 rounded-xl flex items-center gap-3 text-xs font-mono">
                 <CheckCircle className="w-5 h-5 flex-shrink-0 text-emerald-500" />
                 <div>
-                  <strong>¡Registro Corporativo Exitoso!</strong> Tu solicitud ha sido ingresada en la base de datos de auditoría de Grupo Zubiaurre en tiempo real.
+                  <strong>¡Registro Corporativo Exitoso!</strong> Tu solicitud ha sido ingresada en la base de datos de auditoría de Inversiones Troncoso en tiempo real.
                 </div>
               </div>
             )}
@@ -188,7 +188,7 @@ export default function LeadsManager() {
                     onChange={(e) => setProjectInterest(e.target.value)}
                     className="w-full bg-slate-950 border border-slate-800 focus:border-amber-500/60 rounded-lg py-2.5 px-4 text-xs font-mono text-slate-100 outline-none"
                   >
-                    <option>Condominio Zubiaurre (DS49)</option>
+                    <option>Condominio Troncoso (DS49)</option>
                     <option>Inversiones Troncoso SpA Equity Share</option>
                     <option>Virtualizar Inmersive Lab Systems</option>
                     <option>Jhedai AI Automations</option>
@@ -309,7 +309,7 @@ export default function LeadsManager() {
 
             {/* Corporate footer info */}
             <div className="text-[10px] text-slate-500 leading-relaxed font-sans mt-6 pt-4 border-t border-slate-800/60">
-              Dirección Corporativa: Apoquindo, Las Condes, Santiago, Chile • Email: pablo.troncoso@virtualizar.cl • www.zubiaurre.org • En alianza integral con Inversiones Troncoso SpA.
+              Dirección Corporativa: Apoquindo, Las Condes, Santiago, Chile • Email: pablo.troncoso@virtualizar.cl • www.virtualizar.cl • Inversiones Troncoso SpA.
             </div>
           </div>
         </div>

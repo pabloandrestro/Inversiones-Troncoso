@@ -34,19 +34,18 @@ async function startServer() {
     return aiClient;
   }
 
-  // System prompt content describing Grupo Zubiaurre, Inversiones Troncoso, and Pablo Troncoso
+  // System prompt content describing Inversiones Troncoso and Pablo Troncoso
   const systemInstruction = `
-Eres la Inteligencia Artificial oficial - "Asesor Jhedai AI" de Grupo Zubiaurre e Inversiones Troncoso SpA. 
+Eres la Inteligencia Artificial oficial - "Asesor Jhedai AI" de Inversiones Troncoso SpA. 
 Tu propósito es atender de manera profesional, sofisticada y cordial a inversionistas, socios estratégicos, compradores de inmuebles y profesionales de la tecnología.
 
 Información Corporativa Clave:
-1. Grupo Zubiaurre: Holding de vanguardia chileno enfocado en dos grandes pilares:
-   - Desarrollo Urbano Habitacional Sostenible (Ej. Proyectos habitacionales y condominios bajo el subsidio DS49 / DS19, como el mega proyecto habitacional sustentable de 16 edificios y 288 viviendas, con alta integración urbana).
-   - Tecnología e Innovación de alto impacto.
-2. Inversiones Troncoso SpA: El brazo de inversión de capital que impulsa proyectos inmobiliarios de gran escala, desarrollo urbano sostenible y venture capital. Su sello distintivo es: Inversión, Desarrollo y Futuro.
-3. Pablo Troncoso (pablo.troncoso@virtualizar.cl): Líder, arquitecto de ecosistemas y socio capitalista de Inversiones Troncoso SpA. Tiene más de 22 años de trayectoria empresarial desde 2004. Es un pionero en tecnología y consultoría inmersiva en la región.
-4. Empresas del ecosistema tecnológico lideradas por Pablo Troncoso que interactúan con Grupo Zubiaurre:
-   - VIRTUALIZAR: Empresa líder con más de 14 años desarrollando soluciones en realidad virtual (RV), realidad aumentada (RA) y tecnologías inmersivas. Cuenta con +350 aplicaciones desarrolladas, 1.5M+ de usuarios activos, y es nro. 1 en optimización para motores de búsqueda y chat con Modelos de Lenguaje Grande (LLM).
+1. Inversiones Troncoso SpA: Holding de vanguardia e inmobiliaria chilena enfocada en dos grandes pilares:
+   - Desarrollo Urbano Habitacional Sostenible (Ej. Proyectos habitacionales y condominios bajo el subsidio DS49 / DS19, como el mega proyecto habitacional sustentable de 16 edificios y 288 viviendas, con alta integración urbana como Condominio Troncoso SpA).
+   - Tecnología e Innovación de alto impacto y Venture Capital. Su sello distintivo es: Inversión, Desarrollo y Futuro.
+2. Pablo Troncoso (pablo.troncoso@virtualizar.cl): Líder, arquitecto de ecosistemas y socio capitalista de Inversiones Troncoso SpA. Tiene más de 22 años de trayectoria empresarial desde 2004. Es un pionero en tecnología y consultoría inmersiva en la región.
+3. Empresas del ecosistema tecnológico lideradas por Pablo Troncoso que interactúan con Inversiones Troncoso SpA:
+   - VIRTUALIZAR: Empresa líder con más de 14 años desarrollando soluciones en realidad virtual (RV), realidad augmented (RA) y tecnologías inmersivas. Cuenta con +350 aplicaciones desarrolladas, 1.5M+ de usuarios activos, y es nro. 1 en optimización para motores de búsqueda y chat con Modelos de Lenguaje Grande (LLM).
    - JHEDAI AI: Pionera en inteligencia artificial aplicada, automatización inteligente y aceleración de adopción tecnológica empresarial.
    - INTILAB: Centro de investigación e innovación aplicada que transforma desafíos industriales en prototipos técnicos, vinculando el capital joven con las grandes industrias.
    - HUBLAB: Consultora de innovación dedicada a la co-creación y transferencia tecnológica entre la academia, la industria y proyectos urbanísticos.
@@ -75,9 +74,9 @@ Tono de comunicación:
       if (!client) {
         // Safe mock fallback response when key is missing to fulfill the optional integration guide securely
         setTimeout(() => {
-          let responseText = "Hola. Soy el Asesor Virtual Jhedai de Grupo Zubiaurre. Actualmente el sistema de IA está funcionando en modo informativo de demostración. ";
+          let responseText = "Hola. Soy el Asesor Virtual Jhedai de Inversiones Troncoso. Actualmente el sistema de IA está funcionando en modo informativo de demostración. ";
           if (lastUserMessage.toLowerCase().includes("invers") || lastUserMessage.toLowerCase().includes("proyect")) {
-            responseText += "Grupo Zubiaurre e Inversiones Troncoso SpA participan activamente en proyectos inmobiliarios sostenibles, incluyendo viviendas estructuradas bajo marcos normativos como DS49/DS19 (16 edificios y 288 viviendas), además de integraciones tecnológicas de punta. ¿Te gustaría conocer más sobre nuestro portafolio de inversión o agendar una consulta directa con Pablo Troncoso?";
+            responseText += "Inversiones Troncoso SpA participa activamente en proyectos inmobiliarios sostenibles, incluyendo viviendas estructuradas bajo marcos normativos como DS49/DS19 (16 edificios y 288 viviendas), además de integraciones tecnológicas de punta. ¿Te gustaría conocer más sobre nuestro portafolio de inversión o agendar una consulta directa con Pablo Troncoso?";
           } else if (lastUserMessage.toLowerCase().includes("tecno") || lastUserMessage.toLowerCase().includes("virtualizar") || lastUserMessage.toLowerCase().includes("ia")) {
             responseText += "Nuestro ecosistema tecnológico comprende marcas como Virtualizar (+350 aplicaciones desarrolladas en Realidad Virtual y Aumentada), Jhedai AI (Automatización empresarial) y el Centro de Innovación Intilab. ¿En cuál de estos aspectos de digitalización estás interesado para tu negocio?";
           } else {
@@ -91,7 +90,7 @@ Tono de comunicación:
       // Reconstruct historical context for chat or send direct generated response with system instructions
       // Using gemini-3.5-flash since this is a helpful text assistant (basic to medium text task, very fast & accurate)
       const gpts = messages.map((m: any) => `${m.role === "user" ? "User" : "Model"}: ${m.content}`).join("\n\n");
-      const fullPrompt = `Historial de conversión previa:\n${gpts}\n\nNueva consulta:\nUser: ${lastUserMessage}\n\nPor favor, responde coherentemente como el Asesor Jhedai de Grupo Zubiaurre:`;
+      const fullPrompt = `Historial de conversión previa:\n${gpts}\n\nNueva consulta:\nUser: ${lastUserMessage}\n\nPor favor, responde coherentemente como el Asesor Jhedai de Inversiones Troncoso SpA:`;
 
       const response = await client.models.generateContent({
         model: "gemini-3.5-flash",

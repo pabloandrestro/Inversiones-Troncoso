@@ -1,6 +1,6 @@
 {
-  "name": "Grupo Zubiaurre",
-  "description": "Plataforma corporativa de Grupo Zubiaurre, integrando inversiones inmobiliarias sostenibles y tecnologías de vanguardia.",
+  "name": "Inversiones Troncoso",
+  "description": "Plataforma corporativa de Inversiones Troncoso SpA, integrando inversiones inmobiliarias sostenibles y tecnologías de vanguardia.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
