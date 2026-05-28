@@ -15,6 +15,7 @@ import {
 import IdentityLogo from "./components/IdentityLogo";
 import AboutLeader from "./components/AboutLeader";
 import ProjectShowcase from "./components/ProjectShowcase";
+import ZuloagaHeritage from "./components/ZuloagaHeritage";
 import ImpactCalculator from "./components/ImpactCalculator";
 import LeadsManager from "./components/LeadsManager";
 import AssistantChat from "./components/AssistantChat";
@@ -52,6 +53,7 @@ export default function App() {
             <a href="#ecosistema" className="hover:text-amber-500 transition-colors">Ecosistema</a>
             <a href="#projects" className="hover:text-amber-500 transition-colors">Desarrollos</a>
             <a href="#leadership" className="hover:text-amber-500 transition-colors">Dirección</a>
+            <a href="#zuloaga-heritage" className="hover:text-amber-500 transition-colors">Arte Zuloaga</a>
             <a href="#calculator" className="hover:text-amber-500 transition-colors">Simulación</a>
             <a href="#contact" className="hover:text-amber-500 transition-colors">Inversión</a>
           </div>
@@ -307,6 +309,9 @@ export default function App() {
         {/* Corporate Profile - CV Pablo Troncoso */}
         <AboutLeader />
 
+        {/* Art historical connection to Basque Modernism and Ignacio Zuloaga */}
+        <ZuloagaHeritage />
+
         {/* Live ROI Dynamic Calculator */}
         <ImpactCalculator />
 
@@ -333,6 +338,7 @@ export default function App() {
             <a href="#ecosistema" className="hover:text-amber-500">Holding</a>
             <a href="#projects" className="hover:text-amber-500">Inmobiliaria</a>
             <a href="#leadership" className="hover:text-amber-500">Liderazgo</a>
+            <a href="#zuloaga-heritage" className="hover:text-amber-500">Arte Zuloaga</a>
             <a href="#calculator" className="hover:text-amber-500">Retornos</a>
           </div>
           <div className="text-[10px] text-slate-600 font-sans md:text-right">
